@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class DWItemHandler {
 	
 	private static ArrayList<DWItem> items = new ArrayList<DWItem>();
+	private static ArrayList<DWItemBlock> itemblocks = new ArrayList<DWItemBlock>();
+	
 	private static boolean init=false;
 
 	public DWItemHandler() {
@@ -20,10 +22,23 @@ public class DWItemHandler {
 		}
 	}
 	
+	public static boolean addItemBlock(DWItemBlock item){
+		if(!init){
+			itemblocks.add(item);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
 	public static void init(){
 		if(!init){
 			for(int i=0;i<items.size();i++){
 				items.get(i).register();
+			}
+			
+			for(int c=0;c<itemblocks.size();c++){
+				itemblocks.get(c).register();
 			}
 		}
 		init=true;
@@ -31,6 +46,10 @@ public class DWItemHandler {
 	
 	public static ArrayList<DWItem> getItems(){
 		return items;
+	}
+	
+	public static ArrayList<DWItemBlock> getItemBlocks(){
+		return itemblocks;
 	}
 
 }
