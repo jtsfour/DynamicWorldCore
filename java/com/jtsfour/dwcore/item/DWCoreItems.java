@@ -10,7 +10,7 @@ public class DWCoreItems {
 		
 	}
 	
-	public final static CreativeTabs DWCoreTab = new CreativeTabs("DWCoreTab"){
+	public final static CreativeTabs DWCoreTab = new CreativeTabs("dwcore_tab"){
 			public ItemStack getTabIconItem() {
 				return new ItemStack(DWCoreItems.testitem);
 			}

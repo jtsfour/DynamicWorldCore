@@ -18,11 +18,11 @@ public class DWItemBlock extends ItemBlock {
 	public DWItemBlock(DWBlock block) {
 		super(block);
 		NAME=block.getName();
-		setUnlocalizedName(DynamicWorldCore.MODID+"_"+NAME);
 	}
 	
 	protected void register(){
 		if(flag){
+			setUnlocalizedName(DynamicWorldCore.MODID+"_"+NAME);
 			setRegistryName(DynamicWorldCore.MODID+"_"+NAME);
 			GameRegistry.register(this);
 		}
@@ -32,7 +32,7 @@ public class DWItemBlock extends ItemBlock {
 	public void registerModels(){
 		if(flag2){
 			if(DynamicWorldCore.ISCLIENT){
-			    Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, 0, new ModelResourceLocation(DynamicWorldCore.MODID + ":" +DynamicWorldCore.MODID+"_"+NAME, "inventory"));
+				Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, 0, new ModelResourceLocation(DynamicWorldCore.MODID + ":" +DynamicWorldCore.MODID+"_"+NAME, "inventory"));
 			}
 		}
 		flag2=false;

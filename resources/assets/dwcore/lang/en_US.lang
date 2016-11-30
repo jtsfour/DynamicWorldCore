@@ -1,0 +1,5 @@
+itemGroup.dwcore_tab=Dynamic World
+
+item.dwcore_testitem.name=Test Item
+
+tile.dwcore_testblock.name=Test Block
