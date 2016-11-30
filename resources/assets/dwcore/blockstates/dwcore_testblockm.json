@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "color=blue":    { "model": "dwcore:dwcore_testblockm_0" },
+        "color=yellow":     { "model": "dwcore:dwcore_testblock_1" },
+    }
+}

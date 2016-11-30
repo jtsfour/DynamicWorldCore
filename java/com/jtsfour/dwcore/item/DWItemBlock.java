@@ -37,5 +37,9 @@ public class DWItemBlock extends ItemBlock {
 		}
 		flag2=false;
 	}
+	
+	public String getName(){
+		return NAME;
+	}
 
 }
