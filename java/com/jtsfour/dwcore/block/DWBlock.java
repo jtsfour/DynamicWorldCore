@@ -12,12 +12,11 @@ public class DWBlock extends Block {
 	
 	private String NAME;
 	private boolean flag=true;
-	private boolean flag2=true;
+	//private boolean flag2=true;
 
 	public DWBlock(String name, Material material){
 		super(material);
 		NAME=name;
-		
 	}
 	
 	protected void register(){
@@ -42,5 +41,7 @@ public class DWBlock extends Block {
 	public String getName(){
 		return NAME;
 	}
+	
+	
 
 }
