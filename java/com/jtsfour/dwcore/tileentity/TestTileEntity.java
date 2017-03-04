@@ -3,7 +3,7 @@ package com.jtsfour.dwcore.tileentity;
 public class TestTileEntity extends DWTileEntity {
 	
 	public TestTileEntity(){
-		
+		System.out.println("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY");
 	}
 	
 	public void onChunkUnload(){

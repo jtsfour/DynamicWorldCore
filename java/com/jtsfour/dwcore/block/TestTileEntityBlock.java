@@ -1,5 +1,6 @@
 package com.jtsfour.dwcore.block;
 
+import com.jtsfour.dwcore.item.DWCoreItems;
 import com.jtsfour.dwcore.tileentity.TestTileEntity;
 
 import net.minecraft.block.ITileEntityProvider;
@@ -15,10 +16,11 @@ public class TestTileEntityBlock extends DWBlock implements ITileEntityProvider 
 	public TestTileEntityBlock() {
 		super("testtileentity", Material.ROCK);
 		this.isBlockContainer=true;
+		setCreativeTab(DWCoreItems.DWCoreTab);
 	}
 	
 	 public EnumBlockRenderType getRenderType(IBlockState state){
-        return EnumBlockRenderType.INVISIBLE;
+        return EnumBlockRenderType.MODEL;
 	 }
 
 	@Override
