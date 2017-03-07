@@ -17,10 +17,18 @@ public class TestTileEntityBlock extends DWBlock implements ITileEntityProvider 
 		super("testtileentity", Material.ROCK);
 		this.isBlockContainer=true;
 		setCreativeTab(DWCoreItems.DWCoreTab);
+		
 	}
 	
+	@Override
+	@Deprecated
+	public boolean isOpaqueCube(IBlockState state){
+		return false;
+	}
+	
+	@Override
 	 public EnumBlockRenderType getRenderType(IBlockState state){
-        return EnumBlockRenderType.MODEL;
+        return EnumBlockRenderType.INVISIBLE;
 	 }
 
 	@Override
